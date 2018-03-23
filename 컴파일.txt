@@ -1,0 +1,3 @@
+javac C:\Users\Administrator\Desktop\myjava\파일명
+
+java -cp C:\Users\Administrator\Desktop\myjava 파일명

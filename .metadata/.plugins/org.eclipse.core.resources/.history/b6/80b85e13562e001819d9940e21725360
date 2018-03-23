@@ -1,0 +1,7 @@
+package extends_Examle;
+
+public class Car {
+	Car(){
+		System.out.println("Car 생성자");
+	}
+}
