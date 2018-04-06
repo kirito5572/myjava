@@ -6,7 +6,6 @@ public class ThrowExam {
 		irum[3] = "홍길동";
 	}
 	public static void main(String[] args) {
-		ThrowExam ts = new ThrowExam();
 		try {
 		arrayMethod();
 		}catch(ArrayIndexOutOfBoundsException ae) {

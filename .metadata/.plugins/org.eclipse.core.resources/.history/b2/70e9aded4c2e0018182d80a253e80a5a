@@ -1,7 +1,0 @@
-package car_Truck_Casting;
-
-public class MainClass {
-	public static void main(String[] args) {
-		
-	}
-}
