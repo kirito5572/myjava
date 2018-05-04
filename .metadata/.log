@@ -4000,3 +4000,749 @@ java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201
 
 !ENTRY org.eclipse.jface.text 2 0 2018-04-20 12:16:34.902
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-04-24 10:10:00.147 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-04-24 10:11:14.633
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-04-24 10:16:48.912
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-04-24 10:17:20.986
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-04-24 10:17:20.987
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-04-24 10:17:20.991
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-04-24 10:17:20.991
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-24 10:24:13.376
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-24 10:24:13.377
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-05-03 09:22:06.435 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-03 09:22:26.370
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-03 09:23:05.299 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-03 09:23:25.212
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-03 09:44:33.811
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-05-03 09:44:50.548
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-03 09:44:50.549
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-03 09:44:50.553
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-03 09:44:50.553
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SESSION 2018-05-04 12:02:54.749 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-04 12:03:13.213
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 12:27:33.046
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-05-04 12:27:50.183
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 12:27:50.184
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 12:27:50.187
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 12:27:50.188
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SESSION 2018-05-04 13:45:01.842 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-04 13:45:25.573
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-04 13:46:27.206 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-04 13:46:49.037
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 13:58:59.285
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 13:58:59.287
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 13:59:28.777
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 13:59:28.779
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 14:12:38.973
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-05-04 14:12:56.722
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 14:12:56.722
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 14:12:56.746
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2018-05-04 14:12:56.746
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.4/R-4.4.1-201409250400 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
