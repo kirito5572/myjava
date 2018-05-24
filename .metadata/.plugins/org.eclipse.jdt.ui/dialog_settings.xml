@@ -4,12 +4,23 @@
 	<item value="C:\Users\Administrator\Downloads\mysql-connector-java-5.1.46\mysql-connector-java-5.1.46" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
+	<section name="ProblemSeveritiesConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="true" key="expanded1"/>
+		<item value="false" key="expanded4"/>
+		<item value="false" key="expanded3"/>
+		<item value="false" key="expanded6"/>
+		<item value="false" key="expanded5"/>
+		<item value="false" key="expanded8"/>
+		<item value="false" key="expanded7"/>
+		<item value="false" key="expanded0"/>
+	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="373" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="548" key="DIALOG_HEIGHT"/>
-		<item value="85" key="DIALOG_X_ORIGIN"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="329" key="DIALOG_X_ORIGIN"/>
+		<item value="33" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>

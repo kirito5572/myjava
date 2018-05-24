@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Administrator\Documents\Date0511"/>
 			<item value="C:\Users\Administrator\Desktop\myjava"/>
 			<item value="C:\Users\Administrator\Desktop\myjava\DatabaseExample"/>
 			<item value="C:\Users\Administrator\Desktop\myjava\GUIExample"/>
