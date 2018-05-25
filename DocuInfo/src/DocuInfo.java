@@ -44,8 +44,9 @@ public class DocuInfo extends JFrame {
 	 * Create the frame.
 	 */
 	public DocuInfo() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 400);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -60,7 +61,8 @@ public class DocuInfo extends JFrame {
 		panel.add(panel_1);
 		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel lblNewLabel = new JLabel("키워드(K):");
+		JLabel lblNewLabel = new JLabel("제목(T):");
+		lblNewLabel.setDisplayedMnemonic('T');
 		lblNewLabel.setHorizontalTextPosition(SwingConstants.LEFT);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel.setPreferredSize(new Dimension(60, 15));
@@ -74,7 +76,8 @@ public class DocuInfo extends JFrame {
 		panel.add(panel_2);
 		panel_2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label = new JLabel("키워드(K):");
+		JLabel label = new JLabel("주제(S):");
+		label.setDisplayedMnemonic('S');
 		label.setHorizontalTextPosition(SwingConstants.LEFT);
 		label.setHorizontalAlignment(SwingConstants.LEFT);
 		label.setPreferredSize(new Dimension(60, 15));
@@ -88,7 +91,8 @@ public class DocuInfo extends JFrame {
 		panel.add(panel_3);
 		panel_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_1 = new JLabel("키워드(K):");
+		JLabel label_1 = new JLabel("지은이(A):");
+		label_1.setDisplayedMnemonic('A');
 		label_1.setHorizontalTextPosition(SwingConstants.LEFT);
 		label_1.setHorizontalAlignment(SwingConstants.LEFT);
 		label_1.setPreferredSize(new Dimension(60, 15));
@@ -98,7 +102,8 @@ public class DocuInfo extends JFrame {
 		textField_2.setColumns(21);
 		panel_3.add(textField_2);
 		
-		JButton btny = new JButton("오늘 날짜(Y)");
+		JButton btny = new JButton("지은이(P)");
+		btny.setMnemonic('P');
 		btny.setPreferredSize(new Dimension(105, 23));
 		panel_3.add(btny);
 		
@@ -106,7 +111,8 @@ public class DocuInfo extends JFrame {
 		panel.add(panel_4);
 		panel_4.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_2 = new JLabel("키워드(K):");
+		JLabel label_2 = new JLabel("날짜(M):");
+		label_2.setDisplayedMnemonic('M');
 		label_2.setHorizontalTextPosition(SwingConstants.LEFT);
 		label_2.setHorizontalAlignment(SwingConstants.LEFT);
 		label_2.setPreferredSize(new Dimension(60, 15));
@@ -117,6 +123,7 @@ public class DocuInfo extends JFrame {
 		panel_4.add(textField_3);
 		
 		JButton button = new JButton("오늘 날짜(Y)");
+		button.setMnemonic('Y');
 		button.setPreferredSize(new Dimension(105, 23));
 		panel_4.add(button);
 		
@@ -125,19 +132,43 @@ public class DocuInfo extends JFrame {
 		panel_5.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JLabel label_3 = new JLabel("키워드(K):");
+		label_3.setDisplayedMnemonic('K');
+		label_3.setVerticalAlignment(SwingConstants.TOP);
 		label_3.setPreferredSize(new Dimension(60, 15));
 		label_3.setHorizontalTextPosition(SwingConstants.LEFT);
 		label_3.setHorizontalAlignment(SwingConstants.LEFT);
 		panel_5.add(label_3);
 		
 		JTextArea textArea = new JTextArea();
+		textArea.setPreferredSize(new Dimension(4, 51));
 		textArea.setColumns(30);
 		
 		JScrollPane scrollPane = new JScrollPane(textArea);
-		scrollPane.setPreferredSize(new Dimension(216, 50));
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		panel_5.add(scrollPane);
+		
+		JPanel panel_6 = new JPanel();
+		panel.add(panel_6);
+		panel_6.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		
+		JLabel label_4 = new JLabel("기타(E):");
+		label_4.setDisplayedMnemonic('E');
+		label_4.setVerticalAlignment(SwingConstants.TOP);
+		label_4.setPreferredSize(new Dimension(60, 15));
+		label_4.setHorizontalTextPosition(SwingConstants.LEFT);
+		label_4.setHorizontalAlignment(SwingConstants.LEFT);
+		panel_6.add(label_4);
+		
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setPreferredSize(new Dimension(4, 102));
+		textArea_1.setColumns(30);
+		
+		JScrollPane scrollPane_1 = new JScrollPane(textArea_1);
+		scrollPane_1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPane_1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		panel_6.add(scrollPane_1);
+		
 	}
 
 }

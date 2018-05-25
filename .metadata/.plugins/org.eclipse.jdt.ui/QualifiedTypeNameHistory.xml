@@ -37,7 +37,6 @@
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-<fullyQualifiedTypeName name="javax.swing.SwingConstants"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="use_MNEMONIC.JFrame_Mnemonic"/>
@@ -49,15 +48,16 @@
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
 <fullyQualifiedTypeName name="main_package.MainFrame"/>
-<fullyQualifiedTypeName name="main_package.FView"/>
-<fullyQualifiedTypeName name="main_package.ATable"/>
 <fullyQualifiedTypeName name="javax.swing.JPopupMenu"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="javax.swing.event.AncestorListener"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
-<fullyQualifiedTypeName name="javax.swing.JTable"/>
 <fullyQualifiedTypeName name="javax.swing.text.DefaultEditorKit.CopyAction"/>
 <fullyQualifiedTypeName name="java.awt.datatransfer.Clipboard"/>
 <fullyQualifiedTypeName name="java.awt.datatransfer.StringSelection"/>
+<fullyQualifiedTypeName name="javax.swing.SwingConstants"/>
+<fullyQualifiedTypeName name="javax.swing.JTable"/>
+<fullyQualifiedTypeName name="main_package.FView"/>
+<fullyQualifiedTypeName name="main_package.ATable"/>
 <fullyQualifiedTypeName name="main_package.FileManager"/>
 </qualifiedTypeNameHistroy>

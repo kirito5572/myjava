@@ -1,13 +1,9 @@
 package main_package;
 
 import java.awt.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultEditorKit.CopyAction;
 import javax.swing.tree.*;
 import java.io.*;
 import java.nio.channels.FileChannel;
@@ -20,8 +16,7 @@ import java.text.*;
 
 class FileManager implements TreeWillExpandListener,TreeSelectionListener
 {	
-	private FView View;
-	
+	static String title[]={"이름(Name)","크기(Size)","수정한 날짜(Modified)"};
 	static String error = "디스크 혹은 파일을 찾을수 없습니다.\n 혹은 불가능한 접근경로입니다.";
 	static String Show = "폴더로 보기";
 	static String Copy = "복사 ";
@@ -74,7 +69,6 @@ class FileManager implements TreeWillExpandListener,TreeSelectionListener
 				    	showMenu.setText("폴더로 보기");
 				    	copyMenu.setText("복사");
 				    	pasteMenu.setText("붙여넣기");
-				    	ATable.title = new String[] {"이름","크기","수정한 날짜"};
 				    	deleteMenu.setText("삭제");
 				    	replaceMessage = "그곳에 똑같은 이름의 파일이 존재합니다. \n 복사하시겠습니까?";
 				    	showMenu.repaint();
@@ -94,7 +88,6 @@ class FileManager implements TreeWillExpandListener,TreeSelectionListener
 				    	showMenu.setText("Show Item in the Folder");
 				    	copyMenu.setText("Copy");
 				    	pasteMenu.setText("Paste");
-				    	ATable.title = new String[]{"Name","Size","Modified"};
 				    	deleteMenu.setText("Delete");
 				    	replaceMessage = "There's already a file with the same name.\n" + 
 				    			"Do you want to replace it?";
@@ -250,7 +243,7 @@ public static void main(String args[])
 	  try
 	  {
 	    pathText.setText(getPath(e));
-	    View = new FView(getPath(e));
+	    FView View = new FView(getPath(e));
 	    pRight= View.getTablePanel();
 	    pMain.setRightComponent(pRight);
 	  }
@@ -473,7 +466,6 @@ class FView
 
 class ATable extends AbstractTableModel
 {
- static String title[]={"이름","크기","수정한 날짜"};
  static String val[][]=new String[1][3];
  
  public void setValueArr(int i)
@@ -490,11 +482,11 @@ class ATable extends AbstractTableModel
  }
  public void setColumnName(String[] e)
  {
-	 title = e;
+	 FileManager.title = e;
  }
  public String getColumnName(int column )
  {
-  return title[column];
+  return FileManager.title[column];
  }
  public boolean isCellEditable(int rowIndex, int columnIndex)
  {
