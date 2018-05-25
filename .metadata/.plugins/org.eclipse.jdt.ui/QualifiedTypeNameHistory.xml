@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="abstract_ShapeExam.YoungJinShip"/>
-<fullyQualifiedTypeName name="p_100.Yacht"/>
-<fullyQualifiedTypeName name="p_201_V_13.Friends_imfom"/>
-<fullyQualifiedTypeName name="Data0406.ActionEventExam"/>
-<fullyQualifiedTypeName name="d0410.WindowsEventExam2"/>
-<fullyQualifiedTypeName name="main_package.DirectoryFile"/>
-<fullyQualifiedTypeName name="java.beans.EventHandler"/>
-<fullyQualifiedTypeName name="main_package.LocationEvent"/>
-<fullyQualifiedTypeName name="java.util.stream.Stream"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="_0420.BufferedExam"/>
 <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
 <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
@@ -32,7 +22,6 @@
 <fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="java.awt.TextField"/>
 <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
@@ -58,4 +47,17 @@
 <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
+<fullyQualifiedTypeName name="main_package.MainFrame"/>
+<fullyQualifiedTypeName name="main_package.FView"/>
+<fullyQualifiedTypeName name="main_package.ATable"/>
+<fullyQualifiedTypeName name="javax.swing.JPopupMenu"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="javax.swing.event.AncestorListener"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+<fullyQualifiedTypeName name="javax.swing.JTable"/>
+<fullyQualifiedTypeName name="javax.swing.text.DefaultEditorKit.CopyAction"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.Clipboard"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.StringSelection"/>
+<fullyQualifiedTypeName name="main_package.FileManager"/>
 </qualifiedTypeNameHistroy>
