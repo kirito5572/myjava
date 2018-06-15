@@ -1,28 +1,13 @@
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import java.awt.FlowLayout;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-
-import java.awt.Dimension;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import javax.swing.JScrollPane;
-import java.awt.Component;
-import javax.swing.ScrollPaneConstants;
-
 public class DocuInfo extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField tf_T;
+	private JTextField tf_S;
+	private JTextField tf_A;
+	private JTextField tf_M;
 
 	/**
 	 * Launch the application.
@@ -52,122 +37,124 @@ public class DocuInfo extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panel = new JPanel();
-		contentPane.add(panel, BorderLayout.CENTER);
-		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel MainPanel = new JPanel();
+		contentPane.add(MainPanel, BorderLayout.CENTER);
+		MainPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setToolTipText("");
-		panel.add(panel_1);
-		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_T = new JPanel();
+		p_T.setToolTipText("");
+		MainPanel.add(p_T);
+		p_T.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel lblNewLabel = new JLabel("제목(T):");
-		lblNewLabel.setDisplayedMnemonic('T');
-		lblNewLabel.setHorizontalTextPosition(SwingConstants.LEFT);
-		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel.setPreferredSize(new Dimension(60, 15));
-		panel_1.add(lblNewLabel);
+		JLabel l_T = new JLabel("제목(T):");
+		l_T.setDisplayedMnemonic('T');
+		l_T.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_T.setHorizontalAlignment(SwingConstants.LEFT);
+		l_T.setPreferredSize(new Dimension(60, 15));
+		p_T.add(l_T);
 		
-		textField = new JTextField();
-		panel_1.add(textField);
-		textField.setColumns(31);
+		tf_T = new JTextField();
+		p_T.add(tf_T);
+		tf_T.setColumns(31);
 		
-		JPanel panel_2 = new JPanel();
-		panel.add(panel_2);
-		panel_2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_S = new JPanel();
+		MainPanel.add(p_S);
+		p_S.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label = new JLabel("주제(S):");
-		label.setDisplayedMnemonic('S');
-		label.setHorizontalTextPosition(SwingConstants.LEFT);
-		label.setHorizontalAlignment(SwingConstants.LEFT);
-		label.setPreferredSize(new Dimension(60, 15));
-		panel_2.add(label);
+		JLabel l_S = new JLabel("주제(S):");
+		l_S.setDisplayedMnemonic('S');
+		l_S.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_S.setHorizontalAlignment(SwingConstants.LEFT);
+		l_S.setPreferredSize(new Dimension(60, 15));
+		p_S.add(l_S);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(31);
-		panel_2.add(textField_1);
+		tf_S = new JTextField();
+		tf_S.setColumns(31);
+		p_S.add(tf_S);
 		
-		JPanel panel_3 = new JPanel();
-		panel.add(panel_3);
-		panel_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_A = new JPanel();
+		MainPanel.add(p_A);
+		p_A.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_1 = new JLabel("지은이(A):");
-		label_1.setDisplayedMnemonic('A');
-		label_1.setHorizontalTextPosition(SwingConstants.LEFT);
-		label_1.setHorizontalAlignment(SwingConstants.LEFT);
-		label_1.setPreferredSize(new Dimension(60, 15));
-		panel_3.add(label_1);
+		JLabel l_A = new JLabel("지은이(A):");
+		l_A.setDisplayedMnemonic('A');
+		l_A.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_A.setHorizontalAlignment(SwingConstants.LEFT);
+		l_A.setPreferredSize(new Dimension(60, 15));
+		p_A.add(l_A);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(21);
-		panel_3.add(textField_2);
+		tf_A = new JTextField();
+		tf_A.setColumns(21);
+		p_A.add(tf_A);
 		
-		JButton btny = new JButton("지은이(P)");
-		btny.setMnemonic('P');
-		btny.setPreferredSize(new Dimension(105, 23));
-		panel_3.add(btny);
+		JButton bt_P = new JButton("지은이(P)");
+		bt_P.setMnemonic('P');
+		bt_P.setPreferredSize(new Dimension(105, 23));
+		p_A.add(bt_P);
 		
-		JPanel panel_4 = new JPanel();
-		panel.add(panel_4);
-		panel_4.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_M = new JPanel();
+		MainPanel.add(p_M);
+		p_M.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_2 = new JLabel("날짜(M):");
-		label_2.setDisplayedMnemonic('M');
-		label_2.setHorizontalTextPosition(SwingConstants.LEFT);
-		label_2.setHorizontalAlignment(SwingConstants.LEFT);
-		label_2.setPreferredSize(new Dimension(60, 15));
-		panel_4.add(label_2);
+		JLabel l_M = new JLabel("날짜(M):");
+		l_M.setDisplayedMnemonic('M');
+		l_M.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_M.setHorizontalAlignment(SwingConstants.LEFT);
+		l_M.setPreferredSize(new Dimension(60, 15));
+		p_M.add(l_M);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(21);
-		panel_4.add(textField_3);
+		tf_M = new JTextField();
+		tf_M.setColumns(21);
+		p_M.add(tf_M);
 		
-		JButton button = new JButton("오늘 날짜(Y)");
-		button.setMnemonic('Y');
-		button.setPreferredSize(new Dimension(105, 23));
-		panel_4.add(button);
+		JButton bt_Y = new JButton("오늘 날짜(Y)");
+		bt_Y.setMnemonic('Y');
+		bt_Y.setPreferredSize(new Dimension(105, 23));
+		p_M.add(bt_Y);
 		
-		JPanel panel_5 = new JPanel();
-		panel.add(panel_5);
-		panel_5.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_K = new JPanel();
+		MainPanel.add(p_K);
+		p_K.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_3 = new JLabel("키워드(K):");
-		label_3.setDisplayedMnemonic('K');
-		label_3.setVerticalAlignment(SwingConstants.TOP);
-		label_3.setPreferredSize(new Dimension(60, 15));
-		label_3.setHorizontalTextPosition(SwingConstants.LEFT);
-		label_3.setHorizontalAlignment(SwingConstants.LEFT);
-		panel_5.add(label_3);
+		JLabel l_K = new JLabel("키워드(K):");
+		l_K.setVerticalTextPosition(SwingConstants.TOP);
+		l_K.setVerticalAlignment(SwingConstants.TOP);
+		l_K.setDisplayedMnemonic('K');
+		l_K.setPreferredSize(new Dimension(60, 15));
+		l_K.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_K.setHorizontalAlignment(SwingConstants.LEFT);
+		p_K.add(l_K);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setPreferredSize(new Dimension(4, 51));
-		textArea.setColumns(30);
+		JTextArea ta_K = new JTextArea();
+		ta_K.setPreferredSize(new Dimension(4, 51));
+		ta_K.setColumns(30);
 		
-		JScrollPane scrollPane = new JScrollPane(textArea);
-		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		panel_5.add(scrollPane);
+		JScrollPane sc_K = new JScrollPane(ta_K);
+		sc_K.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		sc_K.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		p_K.add(sc_K);
 		
-		JPanel panel_6 = new JPanel();
-		panel.add(panel_6);
-		panel_6.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel p_E = new JPanel();
+		MainPanel.add(p_E);
+		p_E.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label_4 = new JLabel("기타(E):");
-		label_4.setDisplayedMnemonic('E');
-		label_4.setVerticalAlignment(SwingConstants.TOP);
-		label_4.setPreferredSize(new Dimension(60, 15));
-		label_4.setHorizontalTextPosition(SwingConstants.LEFT);
-		label_4.setHorizontalAlignment(SwingConstants.LEFT);
-		panel_6.add(label_4);
+		JLabel l_E = new JLabel("기타(E):");
+		l_E.setVerticalTextPosition(SwingConstants.TOP);
+		l_E.setVerticalAlignment(SwingConstants.TOP);
+		l_E.setDisplayedMnemonic('E');
+		l_E.setPreferredSize(new Dimension(60, 15));
+		l_E.setHorizontalTextPosition(SwingConstants.LEFT);
+		l_E.setHorizontalAlignment(SwingConstants.LEFT);
+		p_E.add(l_E);
 		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setPreferredSize(new Dimension(4, 102));
-		textArea_1.setColumns(30);
+		JTextArea ta_E = new JTextArea();
+		ta_E.setPreferredSize(new Dimension(4, 102));
+		ta_E.setColumns(30);
 		
-		JScrollPane scrollPane_1 = new JScrollPane(textArea_1);
-		scrollPane_1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		scrollPane_1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		panel_6.add(scrollPane_1);
+		JScrollPane sp_E = new JScrollPane(ta_E);
+		sp_E.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		sp_E.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		p_E.add(sp_E);
 		
 	}
 
