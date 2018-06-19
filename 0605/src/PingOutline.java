@@ -301,21 +301,10 @@ public class PingOutline extends JFrame {
 			Object[] tmp = pt.ResultPing(string+(i+1));
 			results[i][0] = string+(i+1);
 			results[i][4] = "[n/s]";
-			if(tmp[0] != null) { 
-				results[i][1] = tmp[0];
-			} else {
-				results[i][1] = "[n/a]";
-			}
-			if(tmp[1] != null) {
-				results[i][2] = tmp[1];
-			} else {
-				results[i][2] = "[n/s]";
-			}
-			if(tmp[2] != null) {
-				results[i][3] = tmp[2];
-			} else {
-				results[i][3] = "[n/s]";
-			}
+			results[i][1] = (tmp[0] != null) ? tmp[0] : "[n/a]";
+			results[i][2] = (tmp[1] != null) ? tmp[1] : "[n/s]";
+			results[i][3] = (tmp[2] != null) ? tmp[2] : "[n/s]";
+
 		}
 		return results;
 	}
