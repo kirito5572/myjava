@@ -1,6 +1,7 @@
 package defaults;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -19,6 +20,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.BoxLayout;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -34,6 +36,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.border.BevelBorder;
+import javax.swing.table.TableCellRenderer;
 
 public class PingOutline extends JFrame {
 
@@ -297,20 +300,47 @@ public class PingOutline extends JFrame {
 				progressBar.setIndeterminate(true);
 				toolbar2.remove(startButton);
 				toolbar2.add(stopButton);
-				currentStatusLabel.setText("Running");
 				jTable.repaint();
+				currentStatusLabel.setText("Starting");
 				statusmainPanel.repaint();
+				
+				jTable.getColumnModel().getColumn(0).setCellRenderer(new TableCellRenderer() {
+
+					@Override
+					public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+							boolean hasFocus, int row, int column) {
+						// TODO Auto-generated method stub
+						if (value instanceof JLabel) return (JLabel) value;
+						return null;
+					}
+					
+				});
 
 				//ping, TTL, Hostname Thread start
-				
 				new Thread(() -> {
-					
+						
 						Pinging[] pg = new Pinging[fixedIPEndlast];
 						for (int i = fixedIPStartlast; i < fixedIPEndlast; i++) {
 							Object[] msg = stats[i];
+							currentStatusLabel.setText("Starting" + fixedIP+(i) + "ping");
+							statusmainPanel.repaint();
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
 							pg[i] = new Pinging(fixedIP +(i), msg);
 							pg[i].start();
+							jTable.repaint();
+							
+							
+							currentStatusLabel.setText("Port Scan Start: " + fixedIP + (i));
+							statusmainPanel.repaint();
+							
 						}
+						currentStatusLabel.setText("Waiting for result");
+						statusmainPanel.repaint();
 						while (Thread.activeCount() > 3) {
 							try {
 								Thread.sleep(200);
@@ -321,58 +351,19 @@ public class PingOutline extends JFrame {
 								e1.printStackTrace();
 							}
 						}
+						
 					//Ports Thread start
 					new Thread(() -> {
-						for (int i = fixedIPStartlast; i < fixedIPEndlast; i++) {
-							if (stats[i][1] != "[n/a]" || stats[i][2] != "[n/s]" || stats[i][3] != "[n/s]") {
-								PortScanner ps = new PortScanner();
-								final ExecutorService es = Executors.newFixedThreadPool(500);
-								final int timeout = 200;
-								final List<Future<ScanResult>> futures = new ArrayList<>();
-								
-								for (int port = 1; port <= 1024; port++) {
-									futures.add(ps.portIsOpen(es, fixedIP + i, port, timeout));
-								}
-								try {
-									es.awaitTermination(200L, TimeUnit.MICROSECONDS);
-								} catch (InterruptedException e1) {
-									// TODO Auto-generated catch block
-									e1.printStackTrace();
-								}
-							
-								int openPorts = 0;
-								for (final Future<ScanResult> f : futures) {
-									try {
-										if (f.get().isOpen()) {
-											openPorts++;
-											stats[i][4] = (stats[i][4] == null)?f.get().getPort(): (stats[i][4].toString() + "," +f.get().getPort());
-											jTable.repaint();
-										}
-									} catch (InterruptedException | ExecutionException e1) {
-										// TODO Auto-generated catch block
-										e1.printStackTrace();
-									}
-								}
-							} else {
-								stats[i][4] = "[n/s]";
-								jTable.repaint();
-							}
-							if(stats[i][4] == null) {
-								stats[i][4] = "Nothing";
-							}
-						}
+						jTable.repaint();
+						progressBar.setIndeterminate(false);
+						toolbar2.remove(stopButton);
+						toolbar2.add(startButton);
+						currentStatusLabel.setText("Ready");
+						jTable.repaint();
 					}).start();
 					
 					//Ports Thread end
-					
 				jTable.repaint();
-				
-				progressBar.setIndeterminate(false);
-				toolbar2.remove(stopButton);
-				toolbar2.add(startButton);
-				currentStatusLabel.setText("Ready");
-				jTable.repaint();
-				
 				}).start();
 				
 				//ping, TTL, Hostname Thread end	
@@ -387,14 +378,14 @@ public class PingOutline extends JFrame {
 					progressBar.setIndeterminate(false);
 					toolbar2.remove(stopButton);
 					toolbar2.add(startButton);
-					currentStatusLabel.setText("Ready");
+					currentStatusLabel.setText("Ready"); 
 					jTable.repaint();
 				}
 			}
 		});
 		ipStartTF.setText(fixedIP + 0);
 		fixedIPStartlast = Integer.parseInt(ipStartTF.getText().substring(ipStartTF.getText().lastIndexOf(".") + 1));
-		ipEndTF.setText(fixedIP + 254);
+		ipEndTF.setText(fixedIP + 255);
 		fixedIPEndlast = Integer.parseInt(ipEndTF.getText().substring(ipEndTF.getText().lastIndexOf(".") + 1));
 		hostNameTF.setText(myHostname);
 		setSize(700, 700);
@@ -403,22 +394,9 @@ public class PingOutline extends JFrame {
 	}
 
 	private Object[][] initializeTable() {
-		Object[][] results = new Object[254][titles.length];
+		Object[][] results = new Object[255][titles.length];
 		return results;
 	}
-
-	private Object[][] getPingStats(String string) {
-		Object[][] results = new Object[254][titles.length];
-		for (int i = 0; i < 254; i++) {
-			results[i][0] = string + (i + 1);
-			results[i][1] = "[n/a]";
-			results[i][2] = "[n/s]";
-			results[i][3] = "[n/s]";
-			results[i][4] = "[n/s]";
-		}
-		return results;
-	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PingOutline po = new PingOutline();
