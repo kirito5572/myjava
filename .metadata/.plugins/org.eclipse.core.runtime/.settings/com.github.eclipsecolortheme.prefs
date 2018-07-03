@@ -1,2 +1,4 @@
 colorTheme=Sublime Text Monokai Extended
+colorThemeExplicit=true
 eclipse.preferences.version=1
+forceDefaultBG=true

@@ -25,5 +25,6 @@ htmTableTagColor=207,191,173
 htmTagColor=207,191,173
 javascriptColor=207,191,173
 javascriptFunction=167,236,33
+overriddenByCSS=,AbstractTextEditor.Color.Background,cfscriptKeywordColor,javascriptFunction,cftaglibColor,htmFormTagColor,cssTextColor,SQLOperatorColor,htmTableTagColor,cfcommentBackgroundColor,currentLineColor,htmCommentColor,cfscriptTextColor,cfscriptfunctionColor,cfscriptStringColor,javascriptColor,cftagColor,unknowTagColors,cfstringColor,SQLCommentColor,htmTagColor,SQLStringColor,cfnumberColor,cfkeywordColor,SQLTextColor,defaultTextColor,SQLKeywordColor,cfcommentColor,stringColor,
 stringColor=236,228,126
 unknowTagColors=255,0,0

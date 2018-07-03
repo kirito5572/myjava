@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name=".tasks.xml">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/myjava/.metadata/.mylyn/.tasks.xml.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

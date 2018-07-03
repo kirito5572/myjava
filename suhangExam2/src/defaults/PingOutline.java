@@ -334,21 +334,20 @@ public class PingOutline extends JFrame {
 							pg[i].start();
 							jTable.repaint();
 							pgindex = pgindex + indextmp;
-							System.out.println(pgindex);
 							progressBar.setValue((int)Math.round(pgindex));
-							if (Thread.activeCount() > 3) {
+							if (Thread.activeCount() > 4) {
 								jTable.repaint();
-								threadStatusLabel.setText("Threads: " + (Thread.activeCount()-3));
+								threadStatusLabel.setText("Threads: " + (Thread.activeCount()-4));
 							}
 							progressBar.setValue((int)Math.round(pgindex));
 						}
 						currentStatusLabel.setText("Waiting for result");
 						statusmainPanel.repaint();
-						while (Thread.activeCount() > 3) {
+						while (Thread.activeCount() > 4) {
 							try {
-								Thread.sleep(200);
+								Thread.sleep(100);
 								jTable.repaint();
-								threadStatusLabel.setText("Threads: " + (Thread.activeCount()-3));
+								threadStatusLabel.setText("Threads: " + (Thread.activeCount()-4));
 							} catch (InterruptedException e1) {
 								// TODO Auto-generated catch block
 								e1.printStackTrace();
@@ -358,7 +357,9 @@ public class PingOutline extends JFrame {
 					//Ports Thread start
 					new Thread(() -> {
 						jTable.repaint();
-						progressBar.setIndeterminate(false);
+						pgindex = 0.00;
+						indextmp = 0.00;
+						progressBar.setValue((int)Math.round(pgindex));;
 						toolbar2.remove(stopButton);
 						toolbar2.add(startButton);
 						currentStatusLabel.setText("Ready");
@@ -378,11 +379,15 @@ public class PingOutline extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				if (e.getSource() == stopButton) {
-					progressBar.setIndeterminate(false);
+					jTable.repaint();
+					pgindex = 0.00;
+					indextmp = 0.00;
+					progressBar.setValue((int)Math.round(pgindex));;
 					toolbar2.remove(stopButton);
 					toolbar2.add(startButton);
-					currentStatusLabel.setText("Ready"); 
+					currentStatusLabel.setText("Ready");
 					jTable.repaint();
+					Thread.interrupted();
 				}
 			}
 		});
