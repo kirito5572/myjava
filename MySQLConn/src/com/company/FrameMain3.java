@@ -1,4 +1,4 @@
-package com.company;
+/*package com.company;
 
 import javax.swing.*;
 import java.awt.*;
@@ -102,3 +102,4 @@ public class FrameMain3 extends JFrame {
         }
     }
 }
+*/

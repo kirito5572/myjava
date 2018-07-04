@@ -4,6 +4,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.net.InetAddress;
 import java.sql.*;
 
 public class FrameMain2 extends JFrame implements ActionListener{
